@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+.hidden-dot{
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    /* pointer-events: none; */
+}
+.head{
+    position: relative;
+    background-color: #ff7;
+    padding: 30px 20px 40px;
+    border: 5px solid #000;
+    border-top: none;
+}
+.top-head{
+    position: absolute;
+    top: -50px;
+    left: -5px;
+    height: 80px;
+    width: 100%;
+    border: 5px solid #000;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    background-color: #ff7;
+}
+.eye-frame{
+    position: relative;
+    border-radius: 50%;
+}
+.eyebrow{
+    position:absolute;
+    top: 0;
+    height: 100px;
+    width: 5px;
+    background-color: #000;
+}
+.one{
+    transform: rotate(-30deg);
+    left: 20px;
+}
+.two{
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.three{
+    transform: rotate(30deg);
+    right: 20px;
+}
+.eye{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border: 5px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.puppil{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.mouth{
+    height: 50px;
+    width: 100%;
+    border-radius: 50%;
+    border-bottom: 5px solid #000;
+}
+@keyframes twinkle{
+    0%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+}
