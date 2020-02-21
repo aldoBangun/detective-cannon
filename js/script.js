@@ -25,6 +25,7 @@ dot.addEventListener('click',function(){
     h1.innerHTML = 'Heheh.. Gotcha!! ^_^';
     setTimeout(function(){
         h1.innerHTML = 'GO TO NEXT LEVEL';
+        h1.style.cursor = 'pointer';
         dot.style.display = 'none';
         dot.style.pointerEvents = 'none';
         h1.addEventListener('click',function(){
